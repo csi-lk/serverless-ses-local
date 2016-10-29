@@ -1,0 +1,14 @@
+{
+  "name": "serverless-ses-local",
+  "version": "1.0.0",
+  "author": "Callum Silcock",
+  "description": "Serverless plugin for a local Amazon Simple Email Service server written in Node",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Si1kIfY/serverless-ses-local"
+  },
+  "scripts": {
+    "lint": "eslint -c .eslintrc 'src/**/*.js'",
+    "test": "IS_OFFLINE=true nyc --require babel-core/register mocha \\ $(find src -name '*spec.js')"
+  }
+}
